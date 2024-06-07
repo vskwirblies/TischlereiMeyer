@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Die Tischlerei Meyer ist Ihr Spezialist wenn es um Holz geht. Möbel, Treppen, Parkett oder Fenster - wir erledigen das.">
+    <title>Tischlerei Meyer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <!-- Kopfzeile -->
+    <header class="main-header">
+        <div class="wrapper">
+            <a href="index.html" class="logo-link"><img src="img/logo-v1.svg" width="96" height="96" alt="Logo Tischlerei Meyer"></a>
+            <input type="checkbox" name="mobile-navigation-toggle" id="idMobileNavigationToggle">
+            <label for="idMobileNavigationToggle" class="hamburger">
+                <span class="line"></span><span class="line"></span><span class="line"></span>
+            </label>
+            <nav class="navigation" id="idMainNavigation">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="#" disabled="true">Über uns</a></li>
+                    <li class="subnavigation-trigger"><a href="moebel.html">Produkte</a>
+                        <ul class="subnavigation">
+                            <li><a href="moebel.html">Möbel</a></li>
+                            <li><a href="#" disabled="true">Treppen</a></li>
+                            <li><a href="#" disabled="true">Parkett</a></li>
+                            <li><a href="#" disabled="true">Fenster</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" disabled="true">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Content -->
+    <main>
+        <!-- Überschrift Produktkategorie -->
+        <section>
+            <div class="wrapper">
+                <div class="section-intro">
+                    <h2 class="section-heading">Möbel</h2>
+                    <p class="section-description">Unsere Möbel entstehen nach ihren individuellen Wünschen. Jedes Stück ist ein Unikat.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie -->
+        <section class="galery">
+            <div class="wrapper d-grid">
+
+                <!-- Zeile -->
+                <div class="row two-columns">
+                    <div class="column text-col"> <!-- Text halbe Breite der Zeile -->
+                        <h2 class="text-start">Hängeschrank</h2>
+                        <p class="text-start">Massives, gebeiztes Kiefernholz macht den besonderen Look dieses Küchenschranks aus.</p>
+                        <p class="text-start"><a href="#" class="modal-opener" id="idModalOpener-02" data-imgsrc="img/quadrat-moebel-01.jpg">Bild vergrößern</a></p>
+                    </div>
+                    <div class="column"> <!-- Bild halbe Breite der Zeile -->
+                        <img src="img/quadrat-moebel-01.jpg" width="480" height="480" alt="Produktfoto Treppen">
+                    </div>
+                </div>
+
+                <!-- Zeile -->
+                <div class="row two-columns">
+                    <div class="column"> <!-- Bild halbe Breite der Zeile -->
+                        <img src="img/quadrat-moebel-02.jpg" width="480" height="480" alt="Produktfoto Treppen">
+                    </div>
+                    <div class="column text-col"> <!-- Text halbe Breite der Zeile -->
+                        <h2 class="text-start">Sideboard</h2>
+                        <p class="text-start">Dieses Sideboard besteht aus furnierten Sperrholzplatten und kombiniert zwei Farbtöne miteinander.</p>
+                        <p class="text-start"><a href="#" class="modal-opener" data-imgsrc="img/quadrat-moebel-02.jpg">Bild vergrößern</a></p>
+                    </div>
+                </div>
+
+                <!-- Zeile -->
+                <div class="row two-columns">
+                    <div class="column text-col"> <!-- Text halbe Breite der Zeile -->
+                        <h2 class="text-start">Gartenstuhl</h2>
+                        <p class="text-start">Dieser Gartenstuhl ist aus massivem Buchenholz gefertigt. Durch die Faltmechanik lässt er sich gut verstauen.</p>
+                        <p class="text-start"><a href="#" class="modal-opener" id="idModalOpener-03" data-imgsrc="img/quadrat-moebel-03.jpg">Bild vergrößern</a></p>
+                    </div>
+                    <div class="column"> <!-- Bild halbe Breite der Zeile -->
+                        <img src="img/quadrat-moebel-03.jpg" width="480" height="480" alt="Produktfoto Treppen">
+                    </div>
+                </div>
+
+                <!-- Zeile -->
+                <div class="row two-columns">
+                    <div class="column"> <!-- Bild halbe Breite der Zeile -->
+                        <img src="img/quadrat-moebel-04.jpg" width="480" height="480" alt="Produktfoto Treppen">
+                    </div>
+                    <div class="column text-col"> <!-- Text halbe Breite der Zeile -->
+                        <h2 class="text-start">Konferenztisch</h2>
+                        <p class="text-start">Dieser Konferenztisch ist in massivem Kiefernholz entstanden. Für seine Farbe wurde er gebeizt und lackiert.</p>
+                        <p class="text-start"><a href="#" class="modal-opener" id="idModalOpener-04" data-imgsrc="img/quadrat-moebel-04.jpg">Bild vergrößern</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal für vergrößerte Bildansicht. Quelle: https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+        <!-- The Modal -->
+        <div id="idModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="modal-closer">&times;</span>
+        
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+        
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+    </main>
+
+    <!-- Fußzeile -->
+    <footer class="main-footer">
+        <div class="wrapper two-columns">
+            <div class="column">
+                <p class="text-start">Tischlerei Meyer<br>Musterstraße 14<br>12345 Musterstadt</p>
+            </div>
+            <div class="column">
+                <nav>
+                    <ul id="footerNavigation">
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">Impressum</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modal.js"></script>
+</body>
+</html>

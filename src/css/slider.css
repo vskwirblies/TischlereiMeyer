@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* 
+Styles für eine Slideshow, eingesetzt im Bereich Kundenstimmen 
+Autor: Valentin Skwirblies
+*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .slide {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.slider .controlpanel {
+    position: absolute;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.slider .controlpanel .dot {
+    margin: 0 .5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: var(--color-beige-01);
+    cursor: pointer;
+}
+
+.slider .controlpanel .dot.active {
+    background-color: var(--color-orange-01)
+}
+
+.slider .prevbutton,
+.slider .nextbutton {
+    background: transparent;
+    border: none;
+}
+
+.slider .prevbutton::after,
+.slider .nextbutton::after {
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border: none;
+    rotate: 45deg;
+    background: transparent;
+    cursor: pointer;
+}
+
+.slider .prevbutton::after {
+    border-left: 2px solid rgb(77, 74, 70);
+    border-bottom: 2px solid rgb(77, 74, 70);
+}
+
+.slider .nextbutton::after {
+    border-right: 2px solid rgb(77, 74, 70);
+    border-top: 2px solid rgb(77, 74, 70);
+}
